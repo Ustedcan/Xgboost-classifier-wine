@@ -1,0 +1,27 @@
+[project]
+name = "wine-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Carlos-Lincango", email = "clincango_425@hotmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "kagglehub>=1.0.2",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.4",
+    "s3fs>=2026.9.0",
+    "scikit-learn>=1.9.1",
+    "xgboost>=3.2.0",
+]
+
+[project.scripts]
+wine-classification = "wine_classification:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
